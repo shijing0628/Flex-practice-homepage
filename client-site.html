@@ -8,236 +8,473 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
     <title>Album example · Bootstrap</title>
-
+   
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">    
     <!-- Bootstrap core CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
 		<meta name="theme-color" content="#563d7c">
 
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
     <!-- Custom styles for this template -->
 
   </head>
   <body>
+    <!-- nav bar -->
     <header>
-  <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
-          </ul>
-        </div>
-      </div>
+        <div class="header_background">
+          <div class="container">
+              <div class="row top-header">
+                  <div class="col-lg-5">
+                    <div class="logo">
+                      <img src="./image/logo.svg"/>
+                      <span >logoipsum</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="with-icon">
+                      <img class="icon" src="./image/access_time_24px.svg"/>
+                      <div class="text">
+                        <p>SERVICE HOURS</p>
+                        <p>Mon - Sat:7:00am - 6:00 pm</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-lg-2">
+                      <a href="#" class="with-icon">                          
+                        <img src="./image/phone_24px.svg"/>
+                        <div class="text">  
+                          <p>CALL US</p>
+                          <p>(555)Car-Repair</p>                
+                        </div>
+                      </a>
+                  </div>                  
+                  <div class="col-lg-2">
+                      <button type="button" class="btn btn-danger appointment">
+                        Make AN APPOINTMENT
+                        <img src="./image/arrow_forward_24px.svg" />
+                      </button>                    
+                  </div>                  
+                </div>
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+                  <ul class="nav-items">
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Specials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Estimates</a></li>
+                    <li class="nav-item"><a class="nav-link"href="#">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link"href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link"href="#">About</a></li>
+
+                  </ul>    
+                  <ul class="nav-icons">
+                    <li class="nav-search">
+                      <a href="#"><i class=" fa fa-fw  fa-search search"></i></a>
+                    </li>
+                    <li class="nav-cart">
+                      <a href="#"><i class=" fa fa-fw  fa-shopping-cart cart fa-fw"></i></a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="topic">
+                  <h1>Top notch service is our main auto motive </h1>  
+                  <button type="button" class="btn btn-danger appointment-second text-uppercase">make an appointment
+                    <img src="./image/arrow_forward_24px.svg" />
+                  </button>
+              </div>
+              </div>    
+              
+              
+          <!-- <div class="nav-head">
+          
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Specials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Estimates</a></li>
+          <li class="nav-item"><a class="nav-link"href="#">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link"href="#">Shop</a></li>
+          <li class="nav-item"><a class="nav-link"href="#">About</a></li>
+          <a href="#"><i class="fa fa-fw  fa-search search fa-lg"></i></a>
+          <a href="#"><i class="fa fa-fw  fa-shopping-cart cart fa-fw"></i></a>
+        </ul>    
+      </nav>
+      <div class="topic">
+        Top notch service is our main auto motive   
+      <button type="button" class="btn btn-danger appointment-second text-uppercase">make an appointment -></button>
     </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container d-flex justify-content-between">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>Album</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
+    </div> -->
   </div>
 </header>
 
-<main role="main">
 
-  <section class="jumbotron text-center">
-    <div class="container">
-      <h1>Album example</h1>
-      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-      <p>
-        <a href="#" class="btn btn-primary my-2">Main call to action</a>
-        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-      </p>
+<div class="section1">
+  <div class="container">
+    <div class="preHeading">
+      <img src="./image/overlineMark.svg" />
+      <span class= "preHeading-title">Who we are</span>
     </div>
-  </section>
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
+    <div class="section1-title">
+      <h2>Nemo enim ipsam voluptatem quia voluptas in proident</h2>
+    </div>
+    <p class="section1-paragrph">
+      Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+      consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
+      illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+    </p>
+    <img class="section1-pic" src="./image/section1-pic.jpg" />
+ </div>
+</div>
+<!-- 3 items content  -->
+<div class="section2">
+  <div class="container">
+    <div class="preHeading">
+      <img src="./image/overlineMark.svg" />
+      <span class="preHeading-title">OUR PROMISE TO YOU</span>
+    </div>
+    <div class="section2-title">
+      <h2>Sed perspiciatis omnis iste natus</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="./image/car_quality_service.svg" />
+        <div class="section2-content">
+        <h3>
+          Quality service. Everytime.
+        </h3>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p>
+       </div>
+      </div>
+      <div class="col-sm-4">
+        <img src="./image/car_quality_service.svg" />
+        <div class="section2-content">
+          <h3>
+            Quality service. Everytime.
+          </h3>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et
+            quas.</p>
         </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
+      </div>
+      <div class="col-sm-4">
+        <img src="./image/car_quality_service.svg" />
+        <div class="section2-content">
+          <h3>
+            Quality service. Everytime.
+          </h3>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et
+            quas.</p>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-</main>
+<!-- image with words and button -->
 
-<footer class="text-muted">
+<div class="section3">
   <div class="container">
-    <p class="float-right">
-      <a href="#">Back to top</a>
-    </p>
-    <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.4/getting-started/introduction/">getting started guide</a>.</p>
+    <div class="section3-content">
+      <h2>
+        Nemo enim ipsam voluptatem quia voluptas in proident
+      </h2>
+      <a herf="#" class="play-button">
+        <img src="./image/play_button.svg" />
+      </a>
+    </div>
   </div>
-</footer>
+</div>
+<!-- section 4 6 items -->
+
+<div class="section4">
+  <div class="bg-pic-4">
+  <div class="container">
+    <div class="preHeading">
+      <img src="./image/overlineMark.svg" />
+      <span class="preHeading-title">Our Services</span>
+    </div>
+    <div class="section4-title">
+      <h2>Sed perspiciatis omnis iste natus</h2>
+    </div>
+    <div class="section4-row">
+      <div class="section4-col">
+        <img src="./image/car_bay.svg" />
+        <h3>Multi Point Inspections</h3>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p>
+      </div>
+      <div class="section4-col">
+        <img src="./image/car_bay.svg" />
+        <h3>Multi Point Inspections</h3>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et
+          quas.</p>
+      </div>
+      <div class="section4-col">
+        <img src="./image/car_bay.svg" />
+        <h3>Multi Point Inspections</h3>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et
+          quas.</p>
+      </div>
+      <div class="section4-col">
+        <img src="./image/car_bay.svg" />
+        <h3>Multi Point Inspections</h3>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et
+          quas.</p>
+      </div>
+      <div class="section4-col">
+        <img src="./image/car_bay.svg" />
+        <h3>Multi Point Inspections</h3>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et
+          quas.</p>
+      </div>
+      <div class="section4-col">
+        <img src="./image/car_bay.svg" />
+        <h3>Multi Point Inspections</h3>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et
+          quas.</p>
+      </div>
+    </div>
+        <button type="button" class="btn btn-danger appointment-second text-uppercase">make an appointment
+          <img src="./image/arrow_forward_24px.svg" />
+        </button>
+  </div>
+ </div>
+</div>
+
+
+<!-- section 5 form -->
+<div class="section5">
+  <div class="container">
+    <form>
+         <div class="section5-title1">
+          Make an appointment
+         </div> 
+      <input type="text" id="fname" name="name" placeholder="Name">
+      <input type="email" id="fname" name="name" placeholder="Email">
+      <input type="tel" id="fname" name="name" placeholder="Phone Number">
+      <input type="text" id="fname" name="name" placeholder="Select Service">
+      <textarea id="w3mission" rows="4" cols="50" placeholder="Tell us about the car needing service(s)"></textarea>
+       <div class="button-parent">
+          <button type="button" class="btn btn-danger appointment-second text-uppercase">make an appointment
+            <img src="./image/arrow_forward_24px.svg" />
+          </button>
+      </div>
+    </form>
+          <div class="section5-content">
+            <div class="section5-wrapper">
+              <h3 class="section5-title2">Maxime placeat facere possimus omnis</h3>
+              <span class="section5-number">17k</span>
+              <p class="section5-service">customers served (and counting)</p>
+              </div>
+          </div>
+  </div>
+</div>
+
+<!-- section 6  -->
+<div class="section1">
+  <div class="container">
+    <div class="preHeading">
+      <img src="./image/overlineMark.svg" />
+      <span class="preHeading-title">GALLERY & LIVE STREAMS</span>
+    </div>
+    <div class="section1-title">
+      <h2>Check out our hard workers</h2>
+    </div>
+    <ul class="section6-items">
+      <li class="section6-item"><a class="nav6-link" href="#">Gallery</a></li>
+      <li class="section6-item"><a class="nav6-link" href="#">Live stream: Bay 1</a></li>
+      <li class="section6-item"><a class="nav6-link" href="#">Live stream: Bay 2</a></li>
+      <li class="section6-item"><a class="nav6-link" href="#">Live stream: Bay 3</a></li>
+    </ul>
+    <img class="section1-pic" src="./image/section1-pic.jpg" />
+  </div>
+</div>
+
+<!-- section 7  -->
+
+<div class="section7">
+  <div class="container">
+    <div class="section7-vol1">
+      <div class="preHeading">
+        <img src="./image/overlineMark.svg" />
+        <span class="preHeading-title">GALLERY & LIVE STREAMS</span>
+      </div>
+      <h1 class="section7-title">Illum qui dolorem eum quo voluptas ut distinctio</h1>
+    </div>
+
+    <div class="section7-vol2">
+      <p class="section7-paragraph">
+        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ex magna
+      aliqua. Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore.”
+    </p>
+     <div class="section7-auther">
+    <img src="./image/Ellipse2.jpg"/>
+    <h4 class="section7-name">Cullen Bohannon</h4>
+      </div>
+    </div>
+
+      <div class="section7-vol2">
+        <p class="section7-paragraph">
+          “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ex
+          magna
+          aliqua. Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore.”
+        </p>
+        <div class="section7-auther">
+          <img src="./image/Ellipse2.jpg" />
+          <h4 class="section7-name">Cullen Bohannon</h4>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- section 8  -->
+
+<div class="section8">
+  <div class="container">
+  <div class="section8-vol1">
+    <div class="preHeading">
+      <img src="./image/overlineMark.svg" />
+      <span class="preHeading-title">GALLERY & LIVE STREAMS</span>
+    </div>
+    <h1 class="section8-title">Illum qui dolorem eum quo voluptas ut distinctio</h1>
+  </div>
+  <div class="section8-vol2">
+    <img class="section8-pic" src="./image/Image-car.jpg"/>
+  </div>
+  <div class="section8-vol3">
+     <div class="section8-item1">
+        <img class="item1-pic" src="./image/car_oil.svg" />
+        <div class="section8-content">
+          <h3>
+          16k+
+          </h3>
+          <p>Oil changes</p>
+        </div>
+      </div>
+      <div class="section8-item1">
+        <img class="item1-pic" src="./image/car_oil.svg" />
+        <div class="section8-content">
+          <h3>
+            16k+
+          </h3>
+          <p>Oil changes</p>
+        </div>
+      </div>
+      <div class="section8-item1">
+        <img class="item1-pic" src="./image/car_oil.svg" />
+        <div class="section8-content">
+          <h3>
+            16k+
+          </h3>
+          <p>Oil changes</p>
+        </div>
+      </div>
+      <div class="section8-item1">
+        <img class="item1-pic" src="./image/car_oil.svg" />
+        <div class="section8-content">
+          <h3>
+            16k+
+          </h3>
+          <p>Oil changes</p>
+        </div>
+      </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- section 9 -->
+<div class="section9">
+  <div class="container">
+    <div class="section9-content">
+      <h3>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
+    </div>
+    <div class="section9-button-parent">
+      <button type="button" class="btn btn-danger appointment-second text-uppercase">make an appointment
+        <img src="./image/arrow_forward_24px.svg" />
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- section 10 -->
+<div class="section10">
+  <div class="container">
+    <div class="section10-vol1">
+        <div class="section10-title1">        
+            <img src="./image/logo.svg" />
+            <span>logoipsum</span>      
+        </div>
+        <div class="section10-content">
+          <p>This is a blurb about the company sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua.</p>
+        </div>
+        <div class="section10-media">
+          <img src="./image/facebook.svg" />
+          <img src="./image/facebook.svg" />
+          <img src="./image/facebook.svg" />
+          <img src="./image/facebook.svg" />
+        </div>
+    </div>
+    <div class="section10-vol2">
+      <div class="section10-title2">
+        <p>EXPLORE LINKS</p>
+      </div>
+   
+    <ul class="section10-items">
+      <li><a href="#">About</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+   </div>
+   <div class="section10-vol3">
+      <div class="section10-title2">
+        <p>Contact</p>
+      </div>
+      <div class="section10-with-icon">
+        <img class="icon" src="./image/access_time_24px.svg" />
+        <div class="text">
+          <p>Info@company.com</p>
+        </div>
+      </div>
+      <div class="section10-with-icon">
+        <img class="icon" src="./image/access_time_24px.svg" />
+        <div class="text">
+          <p>Info@company.com</p>
+        </div>
+      </div>
+      <div class="section10-with-icon">
+        <img class="icon" src="./image/access_time_24px.svg" />
+        <div class="text">
+          <p>Info@company.com</p>
+        </div>
+      </div>
+      <div class="section10-with-icon">
+        <img class="icon" src="./image/access_time_24px.svg" />
+        <div class="text">
+          <p>Info@company.com</p>
+        </div>
+      </div>
+   </div>
+  </div>
+</div>
+
+<!-- section 11 -->
+<div class="section11">
+  <div class="container">
+    <div class="section11-content">
+      <p>Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod</p>
+    </div>
+    <div class="section11-end">
+      <p>© 2018 Company. Privacy Policy | Terms & Conditions</p>
+    </div>
+  </div>
+</div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
